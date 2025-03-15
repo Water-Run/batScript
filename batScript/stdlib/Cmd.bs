@@ -1,0 +1,29 @@
+func echo(is_on:bool)
+{
+    set on_off_str = 'off'
+    if (is_on): on_off_str = 'on'
+    raw echo(is_on => _):echo *
+    exec echo(on_off_str)
+}
+
+func title
+func color(code:int)
+{
+    raw color(code => _):color *
+    exec color(code)
+}
+
+===Color Enum===
+namespace COLOR
+let COLOR.WHITE = 0
+let COLOR.BLACK = 1
+===
+
+
+===CommandStr===
+namepspace CommandStr
+func:str CommandStr.addSudo(command:str)
+{
+    return "sudo" .. command
+}
+===

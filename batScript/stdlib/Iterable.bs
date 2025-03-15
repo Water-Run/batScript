@@ -1,0 +1,18 @@
+@file: batScript stdlib: Iterable
+
+===Common===
+
+====
+
+
+===String===
+@description: Namespace for string
+namespace String
+
+
+===
+
+
+===Array===
+
+===

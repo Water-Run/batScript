@@ -1,0 +1,13 @@
+echo false
+
+func ()
+{
+
+}
+
+raw
+{
+
+}
+
+print ()

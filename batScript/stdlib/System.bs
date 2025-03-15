@@ -1,0 +1,8 @@
+===Common===
+
+@param program:
+func start(program:str)
+{
+    raw start(program => ...):start %0
+}
+===

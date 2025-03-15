@@ -1,0 +1,4 @@
+func diskpart()
+{
+    run:diskpart
+}

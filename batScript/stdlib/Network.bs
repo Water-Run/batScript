@@ -1,0 +1,14 @@
+func ipconfig()
+{
+    run:ipconfig
+}
+
+func networkCheck()
+{
+    run:ping google.com
+}
+
+func networkCheckCN()
+{
+    run:ping baidu.com
+}
