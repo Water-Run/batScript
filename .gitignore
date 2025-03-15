@@ -1,0 +1,56 @@
+# Ignore build output directories
+batScript/bin/
+batScript/obj/
+
+# Ignore user-specific files
+*.user
+*.userosscache
+*.suo
+*.tmp
+*.log
+*.vs/
+.vscode/
+
+# Ignore auto-generated files
+*.dll
+*.exe
+*.pdb
+*.cache
+*.db
+*.pid
+*.log
+*.lock
+*.csproj.nuget.dgspec.json
+*.csproj.nuget.g.props
+*.csproj.nuget.g.targets
+
+# Ignore temporary files
+.DS_Store
+Thumbs.db
+*.tmp
+*.bak
+*.swp
+*.swp~
+*~
+
+# Ignore debug output
+batScript/obj/Debug/
+batScript/bin/Debug/
+
+# Ignore test output
+test/bin/
+test/obj/
+
+# Ignore IDE-specific files
+.idea/
+*.iml
+
+# Ignore compiled output for stdlib
+batScript/stdlib/*.bs.bat
+
+# Ignore documentation temporary files
+doc/**/*.tmp
+doc/**/*.bak
+
+# Ignore compiled examples
+test/examples/*.bat
