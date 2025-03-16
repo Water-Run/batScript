@@ -7,7 +7,7 @@
 ## **Introduction**  
 
 `batScript` is a ***procedural***, ***dynamic scripting language*** designed to **bring a more modern coding experience to Windows batch scripts (`.bat`)**.  
-Similar to how *TypeScript* compiles to *JavaScript*, **`batScript` code files (`.bs`) are compiled into `.bat` files by the `batScript` compiler, `bsc`**.  
+Similar to how *TypeScript* compiles to *JavaScript*, **`batScript` code files (`.bts`) are compiled into `.bat` files by the `batScript` compiler, `bsc`**.  
 `batScript` is implemented in **`C#`** and offers plugins for both *Visual Studio Code* and *Visual Studio*.  
 
 ---
