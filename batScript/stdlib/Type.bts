@@ -1,19 +1,18 @@
-===Common===
+namespace Int;
 
-===
+let Int.TYPE_STR = 'int';
+let Int.DEFAULT_VALUE = 0;
+Int.toInt
 
-===Int===
+namespace Str;
 
-===
+namespace Bool;
 
-===Str===
+namespace Num;
 
-===
+namespace Arr;
 
-===Bool===
+Arr.getUnitTypeStr
+let Arr.TYPE_STR = 'arr';
 
-===
-
-===Arr==
-
-===
+func getTypeStr
