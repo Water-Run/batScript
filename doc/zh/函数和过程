@@ -1,0 +1,19 @@
+# 函数和过程
+
+## 函数  
+
+```batscript
+func:int myFunc(param1:int)
+{
+    return param1;
+}
+```
+
+## 过程  
+
+```batScript
+proc myProc()
+{
+    skipover;
+}
+```
