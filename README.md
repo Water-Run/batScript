@@ -1,25 +1,26 @@
 # `batScript`
 
-> Project under development  
+> 项目开发中  
 
-Windows Batch (`.bat`) is an outdated scripting language. It lacks many basic features of modern programming languages, and its keywords and operators differ significantly from contemporary standards, creating challenges for developers.  
-**`batScript` is a procedural, strongly-typed scripting language. Similar to how `TypeScript` code files (`.ts`) are compiled into `JavaScript` code files (`.js`), `batScript` code files (`.bts`) are compiled into `.bat` by a compiler implemented in `C#`.**  
-`batScript` aims to **bring a more modern experience to `.bat` scripting** by providing the following features (but not limited to):  
+Windows批处理(`.bat`)以其复古而简陋的语法而闻名.尽管有很多脚本(如`powershell`)旨在代替Windows批处理,然而,由于兼容性等方面的考虑,我们很多是否还是需要编写`.bat`.  
+**`batScript`是一个由`lua`实现的强类型的,面向过程的脚本语言,旨在为`.bat`的编写带来更现代的编程体验.** 就像`TypeScript`编译为`JavaScript`一样,`batScript`的代码文件(`.bs`)编译为`.bat`(即`batScript`只有前端).  
 
-- **Type System**: Includes strings (`str`),  booleans (`bool`), numbers (`num`), and optional types for arrays (`arr`).  
-- **Case-Sensitive Variables and Constants**: Supports case-sensitive variables, along with the ability to declare variables using `set` and constants using `let`.  
-- **Modern Control Flow**: Features include conditional statements (`if-elif-else`) and loops (`while` and its variants `loop`, `repeat`, as well as iterator-based loops `iterate`). Basic exception handling (`err`), basic scope control (`local`, etc.), and other flow control functions (e.g., `endprogram`) are also supported.  
-- **Functions**: Supports functions with return values (`func`) and procedures without return values (`procedure`).  
-- **Proper Commenting and Operators**: Includes support for single-line comments (`#`), multi-line comments (`/**/`), inline comments (`--<>`), and documentation comments (`@`). Operators use modern conventions, including basic arithmetic operators (e.g., `+`, `-`, `*`, `/`) and special operators, like the `?` operator for retrieving array lengths.  
-- **Module Management and Standard Library**: Provides basic module management and a foundational standard library.  
-- **Native `.bat` Embedding**: Allows for embedding `.bat` files using `insert` and dynamically executing native `.bat` statements using `run`.  
-- **Visual Studio Code Plugin**: Includes basic features such as syntax highlighting and type suggestions.  
+`batScript`为`.bat`的编写带来了如下的功能:  
 
-## Learning `batScript`
+- **类型系统**: 包括字符串(`str`),布尔值 (`bool`),数字 (`num`),及一维数组(`arr`)  
+- **区分大小写的变量和常量**: 支持大小写敏感的变量名,可以使用 `set` 设置变量,使用 `let` 设置常量  
+- **现代控制流**: 语法包括条件语句(`if-elif-else`)和循环 (`while`及可迭代体(字符串和一维数组)循环`iterate`),均支持嵌套.最基础的异常处理 (`err`),基本的作用域控制 (如 `glob`),及其它流程控制语句 (如 `endprogram`)  
+- **函数与过程**: 支持有返回值的函数 (`func`)和无返回值的过程 (`procedure`)  
+- **合适的注释和操作符等**: 支持单行注释 (`#`),多行注释 (`/**/`),原始注释(`$$$`).操作符符合现代习惯,包括基本算术运算(如 `+`, `-`, `*`, `/`),及特殊操作符,如用于获取数组长度的`?`  
+- **模块管理和标准库**: 提供基础的模块管理及一个内置的标准库.通过现代的关键字(`lib`和`pkg`)进行导入  
+- **原生.bat 嵌入**: 可以使用 `insert`嵌入`.bat`文件,或者通过 `run`动态执行原生`.bat`语句  
+- **Visual Studio Code 插件**: 提供一个VS Code插件,包括语法高亮和类型提示等基础功能  
 
-`batScript` is **simple and easy** to learn, with comprehensive documentation support.  
+## 学习 `batScript`
 
-- [Tutorial](./doc/en/README.md)  
-- [教程](./doc/zh/简介.md)  
+`batScript`拥有完善的文档支持.如果你有一些编程语言基础(否则,你大概不会认识这个项目),上手将是非常快的事情.  
 
-*[GitHub](https://github.com/Water-Run/batScript)*
+- [上手教程](./doc/zh/简介.md)  
+- [技术手册](./doc/zh/简介.md)  
+
+项目开源于*[GitHub](https://github.com/Water-Run/batScript)*.  

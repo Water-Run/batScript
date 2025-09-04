@@ -1,0 +1,76 @@
+>>>
+author: WaterRun
+time: 2025-08-15
+file: Type.bs
+description:  
+<<<
+
+lib Iterable -> {Array};
+
+namespace Convert;
+
+func Convert.numToStr(source: num) => str
+{
+    >>>
+    param: 
+    return: 
+    description:
+    <<<
+}
+
+func Convert.numToBool(source: num) => bool
+{
+    >>>
+    param: 
+    return: 
+    description:
+    <<<
+}
+
+func Convert.strToNum(source: str) => num
+{
+    >>>
+    param: 
+    return: 
+    description:
+    <<<
+}
+
+func Convert.strToBool(source: str) => bool
+{
+    >>>
+    param: 
+    return: 
+    description:
+    <<<
+}
+
+func Convert.boolToNum(source: bool) => num
+{
+    >>>
+    param: 
+    return: 
+    description:
+    <<<
+
+    if (source == true)
+    {
+        return 0;
+    }
+    return 1;
+}
+
+func Convert.boolToStr(source: bool) => str
+{
+    >>>
+    param: 
+    return: 
+    description:
+    <<<
+    
+    if (source == true)
+    {
+        return 'true';
+    }
+    return 'false';
+}

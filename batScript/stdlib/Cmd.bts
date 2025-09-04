@@ -1,6 +1,0 @@
-func echo(is_on:bool)
-{
-    set on_off_str = 'off'
-    if (is_on): on_off_str = 'on'
-    run "echo" .. on_off_str;
-}

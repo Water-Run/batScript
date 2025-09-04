@@ -1,0 +1,8 @@
+>>>
+author: WaterRun
+time: 2025-08-15
+file: Type.bs
+description:  
+<<<
+
+func getIntOriginal(param: )
