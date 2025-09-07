@@ -1,0 +1,13 @@
+func new() -> bool;
+func exist() -> bool;
+func get();
+func set();
+
+func add();
+func minus();
+func multiply();
+func divide();
+func modulo();
+
+func calculate();
+func parseExpression();
