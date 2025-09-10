@@ -1,32 +1,35 @@
 # `batScript`
 
-> 项目开发中  
+[*Chinese Documentation*](README-zh.md)  
 
-Windows批处理(`.bat`)以其复古而简陋的语法而闻名.尽管有很多脚本(如`powershell`)旨在代替Windows批处理,然而,由于兼容性等方面的考虑,我们很多是否还是需要编写`.bat`.  
-**`batScript`是一个由`lua`实现的强类型的,面向过程的脚本语言,旨在为`.bat`的编写带来更现代的编程体验.**就像`TypeScript`编译为`JavaScript`一样,`batScript`的代码文件(`.bs`)编译为`.bat`(即`batScript`只有前端).  
+> Project under development  
 
-`batScript`为`.bat`的编写带来了如下的功能:  
+Windows batch (`.bat`) is known for its retro and simplistic syntax. Although many scripting languages (like `PowerShell`) aim to replace Windows batch, due to compatibility and other considerations, we often still need to write `.bat`.  
+**`batScript` is a statically typed, procedural scripting language designed to bring a more modern programming experience to `.bat`.** Just like `TypeScript` compiles to `JavaScript`, `batScript` code files (`.bs`) compile to `.bat` (i.e., `batScript` only has a frontend).  
 
-- **类型系统**: 包括字符串`str`,布尔值`bool`,数字 `num`,及一维数组`arr`  
-- **区分大小写的变量和常量**: 支持大小写敏感的变量名.使用`set`设置变量,使用`let`设置常量  
-- **正常的注释和运算符等**: 支持单行注释 `#`,多行注释`/**/`,原始注释`$$$`(即在编译后的`.bat`代码中保留).运算符符合现代编程语言习惯,如`+``-``*``/``=``==``~=``>=`等等.包括支持特殊操作符,如可迭代体(如数组)取长运算符`&`,取类型字符串运算符`?`等  
-- **正常控制流**: 包括条件语句`if-elif-else`和循环(`while`普通循环及可迭代体循环`iterate`,包括`continue`和`break`),均支持嵌套.最基础的异常处理 (`err`),基本的作用域控制(如`glob`),及其它流程控制语句 (如 `endprogram`)  
-- **函数与过程**: 支持有返回值的函数 (`func`)和无返回值的过程 (`proc`)  
-- **模块管理和标准库**: 提供基础的模块管理及一个内置的标准库.通过现代的关键字(`lib`和`pkg`)进行导入  
-- **原生.bat 嵌入**: 可以使用`run`嵌入`.bat`文件,或者通过 `raw`动态执行原生`.bat`语句;使用`out`控制对外暴露的内容  
-- **Visual Studio Code 插件**: 提供一个VS Code插件,包括语法高亮和类型提示等基础功能  
+**`batScript` brings the following features to `.bat` writing:**  
 
-`batScript`遵循以下设计原则:  
+- **Type system**: Including **string** `str`, **boolean** `bool`, **number** `num`, and **one-dimensional array** `arr`, with support for **null type** `Nil`.  
+- **Case-sensitive variables and constants**: Supports **case-sensitive variable names**. Use `set` to define variables, `let` to define constants.  
+- **Standard comments and operators**: Supports **single-line comments** `#` and **multi-line comments** `/**/`. Operators follow modern programming conventions, such as **arithmetic operators** `+``-``*``/`, **comparison operators** `==``~=``>=`. It also includes other operators, such as **type string operator** `@`, **null-check operator** `?`, **iterable (array/string) concatenation operator** `..`, and **length operator** `&`.  
+- **Normal control flow**: Includes **conditional statements** `if-elif-else` and **loops** (`while` — standard loop, and `iterate` — iterable loop, both supporting `continue` and `break`), all **support nesting**. Also provides **basic exception handling** `err`, **scope control inside functions** (like `glob`), and other flow control (such as `endprogram`).  
+- **Functions and procedures**: Supports functions (`func`) with return values and procedures (`proc`) without return values. Functions **support recursion**.  
+- **Module management and standard library**: Provides **basic module management** (C-like header include mechanism) and a built-in standard library. Importing is performed via `lib` and `pkg`, with `out` controlling file exports.  
+- **Native .bat embedding**: Supports embedding native `.bat` files via `insert`, or dynamically executing native `.bat` statements via `run`. Use `out` to control content exposure.  
+- **Visual Studio Code plugin**: Offers a VS Code extension providing **syntax highlighting** and **type hints**.  
 
-- 美观,优雅,易读的语法设计  
-- 向前兼容:相同大版本保证语法和库API兼容性  
-- 原生兼容: 编译后的`.bat`本身即为合法的`bat`文件  
+**Design principles of `batScript`:**  
 
-## 学习 `batScript`
+- *Simple, elegant, and readable code*  
+- *No dependencies: the compiled `.bat` is itself a valid batch file*  
 
-`batScript`拥有完善的文档支持.如果你有一些编程语言基础(否则,你也大概不会认识这个项目),上手将是非常快的事情.  
+> `batScript` is open source on [GitHub](https://github.com/Water-Run/batScript/tree/main), licensed under MIT.  
 
-- [上手教程](./doc/zh/guide/01-教程目录.md)  
-- [技术手册](./doc/zh/manual/手册导引.md.md)  
+> `batScript` is implemented in a single `.lua` file, packaged as `.exe`.  
 
-项目开源于*[GitHub](https://github.com/Water-Run/batScript)*.  
+## Learning `batScript`
+
+**`batScript` is very simple, with complete documentation support.** If you have some programming background (which you probably do if you’re looking at this project), getting started will be quick.  
+
+- [Getting Started Guide](./doc/zh/guide/01-教程目录.md)  
+- [Technical Manual](./doc/zh/manual/手册导引.md.md)
