@@ -4,32 +4,32 @@
 
 > Project under development  
 
-Windows batch (`.bat`) is known for its retro and simplistic syntax. Although many scripting languages (like `PowerShell`) aim to replace Windows batch, due to compatibility and other considerations, we often still need to write `.bat`.  
-**`batScript` is a statically typed, procedural scripting language designed to bring a more modern programming experience to `.bat`.** Just like `TypeScript` compiles to `JavaScript`, `batScript` code files (`.bs`) compile to `.bat` (i.e., `batScript` only has a frontend).  
+Windows batch (`.bat`) is known for its retro and simplistic syntax. Although many scripts (like `powershell`) aim to replace Windows batch, however, due to compatibility and other considerations, we often still need to write `.bat`.  
+**`batScript` is a static, procedural scripting language designed to bring a more modern programming experience to `.bat` writing, with simple design and very easy to get started.** Just like `TypeScript` compiles to `JavaScript`, `batScript` code files (`.bs`) compile to `.bat` (i.e., `batScript` only has a frontend).  
 
 **`batScript` brings the following features to `.bat` writing:**  
 
-- **Type system**: Including **string** `str`, **boolean** `bool`, **number** `num`, and **one-dimensional array** `arr`, with support for **null type** `Nil`.  
-- **Case-sensitive variables and constants**: Supports **case-sensitive variable names**. Use `set` to define variables, `let` to define constants.  
-- **Standard comments and operators**: Supports **single-line comments** `#` and **multi-line comments** `/**/`. Operators follow modern programming conventions, such as **arithmetic operators** `+``-``*``/`, **comparison operators** `==``~=``>=`. It also includes other operators, such as **type string operator** `@`, **null-check operator** `?`, **iterable (array/string) concatenation operator** `..`, and **length operator** `&`.  
-- **Normal control flow**: Includes **conditional statements** `if-elif-else` and **loops** (`while` — standard loop, and `iterate` — iterable loop, both supporting `continue` and `break`), all **support nesting**. Also provides **basic exception handling** `err`, **scope control inside functions** (like `glob`), and other flow control (such as `endprogram`).  
-- **Functions and procedures**: Supports functions (`func`) with return values and procedures (`proc`) without return values. Functions **support recursion**.  
-- **Module management and standard library**: Provides **basic module management** (C-like header include mechanism) and a built-in standard library. Importing is performed via `lib` and `pkg`, with `out` controlling file exports.  
-- **Native .bat embedding**: Supports embedding native `.bat` files via `insert`, or dynamically executing native `.bat` statements via `run`. Use `out` to control content exposure.  
-- **Visual Studio Code plugin**: Offers a VS Code extension providing **syntax highlighting** and **type hints**.  
+- **Type system**: Including **string** `str`, **boolean** `bool`, **number** `num`, **one-dimensional array** `arr`, and **null type** `Nil` support  
+- **Case-sensitive variables and constants**: Supports **case-sensitive variable names. Use `set` to define variables, use `let` to define constants**  
+- **Normal comments and operators**: Supports **single-line comments** `#` and **multi-line comments** `/**/` (can be nested). Operators are designed according to modern programming language conventions, such as **arithmetic operators** `+``-``*``/`, **relational operators** `==``~=``>`. As well as other operators, such as **type string operator** `@`, **null-check operator** `?`, **iterable (array and string) concatenation operator** `..`, **length operator** `&`, etc.  
+- **Normal and useful control flow**: Including **conditional statements** `if-elif-else` and **loop statements** (`while` ordinary loop and iterable loop `iterate`, including `continue` and `break`), all **support nesting**, as well as single-line representation and counting variable syntax sugar. The most basic **exception handling** `err` (can define exception type and prompt information), and other flow control statements (such as `endprogram`)  
+- **Functions and procedures**: Supports **functions** (`func`) with return values and **procedures** (`proc`) without return values. Functions support recursion, with variable scope defaulting to within the function, including declaring/calling global scope with `glob`  
+- **Module management and standard library**: Provides **basic module management** (C-like header file inclusion mechanism) and a built-in standard library. Import through keywords `lib` and `pkg`, `expose` controls content exposed by files  
+- **Native .bat embedding**: Can use `insert` to embed native `.bat` files, or dynamically execute native `.bat` statements through `run`  
+- **Visual Studio Code plugin**: Provides a VS Code plugin, including basic features like **syntax highlighting** and **type hints**  
 
-**Design principles of `batScript`:**  
+`batScript` follows these **design principles**:  
 
 - *Simple, elegant, and readable code*  
 - *No dependencies: the compiled `.bat` is itself a valid batch file*  
 
-> `batScript` is open source on [GitHub](https://github.com/Water-Run/batScript/tree/main), licensed under MIT.  
+> `batScript` is open source on [GitHub](https://github.com/Water-Run/batScript/tree/main), using MIT license 
 
-> `batScript` is implemented in a single `.lua` file, packaged as `.exe`.  
+> `batScript` is implemented by a single `.lua` file and packaged as `.exe`  
 
 ## Learning `batScript`
 
-**`batScript` is very simple, with complete documentation support.** If you have some programming background (which you probably do if you’re looking at this project), getting started will be quick.  
+**`batScript` is very simple, with complete documentation support.** If you have some programming language background (otherwise, you probably wouldn't know about this project), getting started will be very quick.  
 
-- [Getting Started Guide](./doc/zh/guide/01-教程目录.md)  
+- [Getting Started Tutorial](./doc/zh/guide/01-教程目录.md)  
 - [Technical Manual](./doc/zh/manual/手册导引.md.md)
