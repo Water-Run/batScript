@@ -1,0 +1,15 @@
+proc bkvNew(file)
+{
+    if(not ?file)
+    {
+        file = ""
+    }
+
+    set result: str;  
+
+    run
+    {
+        "",
+        $|result .. "="
+    }
+}
