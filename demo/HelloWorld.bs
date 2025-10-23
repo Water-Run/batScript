@@ -1,0 +1,10 @@
+/*
+:file: HelloWorld.bs
+:author: WaterRun
+:date: 2025-10-11
+:description: HelloWorld Demo Program
+*/
+
+lib Std;
+
+echoline("HelloWorld");

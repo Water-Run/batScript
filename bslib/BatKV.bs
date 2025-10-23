@@ -1,0 +1,2 @@
+func bkvAvailable(, ?| bkvfile: str,)
+func bkvNew

@@ -1,0 +1,10 @@
+/*
+:file: BasicCalculator.bs
+:author: WaterRun
+:date: 2025-10-11
+:description: BasicCalculator Demo Program
+*/
+
+lib Std;
+
+echoline("Demo BasicCalculator");

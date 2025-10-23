@@ -1,0 +1,13 @@
+/*
+:file: BatKVDBMS.bs
+:author: WaterRun
+:date: 2025-10-11
+:description: BasicCalculator Demo Program
+*/
+
+set batkv_path: str, db_path: str;
+
+while (True)
+{
+    
+}

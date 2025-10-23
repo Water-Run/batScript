@@ -1,0 +1,8 @@
+func ping(site: str) -> bool
+{
+
+}
+
+proc diskpart()
+
+proc winsudo(command: str)

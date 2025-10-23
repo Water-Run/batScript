@@ -1,0 +1,3 @@
+proc setTitle()
+proc setColor()
+let CMD_RED = "";
