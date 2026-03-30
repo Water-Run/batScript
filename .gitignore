@@ -1,99 +1,139 @@
 ############################################
-# OS
+# 1) C# / .NET
 ############################################
-.DS_Store
-Thumbs.db
-desktop.ini
 
-############################################
-# Visual Studio / WinUI 3 / .NET
-############################################
-.vs/
+# Build folders
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+
+# User-specific files
+*.rsuser
 *.suo
 *.user
 *.userosscache
 *.sln.docstates
 
-# Build output
-bin/
-obj/
-[Bb]uild/
-[Bb]uild[Ll]og.*
+# IDE/tool caches
+*.cache
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+*.VC.VC.opendb
 
-# Rider / JetBrains
-.idea/
-*.sln.iml
+# Test results
+[Tt]est[Rr]esult*/
+[Bb]enchmark[Dd]ot[Nn]et.Artifacts/
+
+# NuGet
+*.nupkg
+*.snupkg
+**/[Pp]ackages/*
+!**/[Pp]ackages/build/
+!**/[Pp]ackages/repositories.config
+.nuget/
+*.nuget.props
+*.nuget.targets
+
+# Publish
+publish/
+artifacts/
 
 ############################################
-# VS Code
+# 2) Visual Studio 2026 (通用 VS 忽略项)
 ############################################
-.vscode/
+
+# VS working folder
+.vs/
+
+# Diagnostic / profiling
+*.psess
+*.vsp
+*.vspx
+*.sap
+
+# Generated files
+Generated\ Files/
+_ReSharper*/
+*.DotSettings.user
+
+############################################
+# 3) Visual Studio 插件 (VSIX) 项目
+############################################
+
+# VSIX package outputs
+*.vsix
+*.vsixupload
+*.vsixmanifest.backup
+
+# Common extension build output folders
+VSIXOutput/
+ExtensionPackage/
+AppPackages/
+
+# Keep source manifests/configs tracked:
+# - source.extension.vsixmanifest
+# - .csproj / .sln / .targets etc.
+
+############################################
+# 4) PowerShell
+############################################
+
+# Editor temp/backup
+*.ps1~
+*.psm1~
+*.psd1~
+*~
+
+# Runtime / logs / serialized objects
+*.clixml
+*.psscache
+*.ps1xml.cache
+*.PowerShellEditorServices/
+PowerShellEditorServices.json
+*.transcript
+*.log
+
+# Pester / test / coverage outputs (常见)
+coverage.xml
+testResults.xml
+TestResults.xml
+
+############################################
+# 5) VSC (VS Code) 插件项目
+############################################
+
+# VS Code local settings (按团队需要可放开部分白名单)
+.vscode/*
 !.vscode/extensions.json
+!.vscode/launch.json
+!.vscode/tasks.json
+!.vscode/settings.json
 
-############################################
-# WebStorm / JetBrains (Frontend)
-############################################
-.idea/
-*.ipr
-*.iws
+# VS Code extension test host/cache
+.vscode-test/
+.vscode-test-web/
 
-############################################
-# Node / TypeScript
-############################################
+# Node/TS build artifacts (VS Code 插件常见)
 node_modules/
+out/
+dist/
+build/
+.webpack/
+coverage/
+*.tsbuildinfo
+
+# Packaging outputs
+*.vsix
+*.tgz
+
+# Logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
-
-dist/
-build/
-.out/
-.cache/
-
-############################################
-# TypeScript
-############################################
-*.tsbuildinfo
-
-############################################
-# Environment / Secrets
-############################################
-.env
-.env.*
-*.local
-
-############################################
-# Logs
-############################################
-logs/
-*.log
-
-############################################
-# Temporary files
-############################################
-tmp/
-temp/
-*.tmp
-*.bak
-
-############################################
-# Packaging / Artifacts
-############################################
-*.zip
-*.tar
-*.tar.gz
-*.7z
-*.nupkg
-
-############################################
-# Coverage / Test output
-############################################
-coverage/
-TestResults/
-
-############################################
-# Optional: keep docs generated files out
-############################################
-*.docx
-*.pdf
